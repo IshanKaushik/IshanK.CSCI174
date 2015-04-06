@@ -1,0 +1,22 @@
+Prefix Evaluation Documentation -
+
+This code is written as the solution to the code eval Prefix Expression challenge.
+This code requires a input file , which will be composed of prefixes in each line.
+The code takes in each line and evaluate it before iterating to next line.
+
+Code evaluate problem in following manner -
+
+1) Taken one line from the text file.
+2) Convert the line to String.
+3) Convert String line to String Tokenised format.
+4) Iterate through the tokenised input .
+5) Check if element is operator or number and update it to corresponding stack.
+6) If number stack has more than two numbers than perform the operation over them using 
+   operator from operator stack - pop function is used to get the operator and numbers 
+   from the stack.
+7) Save the result of operation in number list and repeat step 6 , till the expresion
+   is fullly consumed.
+8) When their is no more operation left to be operated , print the result in a new line.
+
+Using above mentioned steps , the code is evaluating and printing the expression provided
+in each line.
